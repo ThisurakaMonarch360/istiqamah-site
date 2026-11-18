@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Privacy Policy · Istiqamah</title>
+<meta name="description" content="Privacy policy for Istiqamah, the Sri Lanka prayer times app. No account, no ads, no tracking.">
+<link rel="icon" href="../icon.png">
+<style>
+:root {
+  --page: #FFFFFF; --side: #F7F9FC; --rule: #E3E7EF; --rule-strong: #CBD2DF;
+  --ink: #1F1B2D; --body: #3A3750; --muted: #6B6880; --accent: #4A5FA8; --accent-bg: #F0F3FB;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body { margin: 0; background: var(--page); color: var(--body); font: 15.5px/1.7 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; }
+a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+code { font: .85em/1.4 ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace; background: var(--side); border: 1px solid var(--rule); border-radius: 4px; padding: .05rem .3rem; overflow-wrap: anywhere; }
+
+.top { border-bottom: 1px solid var(--rule); background: linear-gradient(180deg, #FFFBFD, #EAF3FD); }
+.top-in { max-width: 72rem; margin: 0 auto; padding: .85rem 1rem; display: flex; align-items: center; gap: .6rem; font-size: .9rem; }
+.top img { width: 24px; height: 24px; border-radius: 6px; }
+.top a { color: var(--ink); font-weight: 650; text-decoration: none; }
+.top .crumb { color: var(--muted); }
+
+.layout { max-width: 72rem; margin: 0 auto; padding: 0 1rem; display: grid; grid-template-columns: 1fr; }
+@media (min-width: 900px) { .layout { grid-template-columns: 15rem minmax(0, 1fr); gap: 3.5rem; } }
+
+aside { display: none; }
+@media (min-width: 900px) {
+  aside { display: block; position: sticky; top: 0; align-self: start; max-height: 100vh; overflow: auto; padding: 2.5rem 0; font-size: .875rem; }
+}
+aside p { margin: 0 0 .6rem; color: var(--muted); font-size: .72rem; font-weight: 650; letter-spacing: .1em; text-transform: uppercase; }
+aside ol { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--rule); }
+aside li a { display: block; padding: .3rem 0 .3rem .9rem; margin-left: -1px; border-left: 2px solid transparent; color: var(--body); text-decoration: none; }
+aside li a:hover { color: var(--accent); border-left-color: var(--accent); }
+
+main { max-width: 46rem; padding: 2.5rem 0 5rem; }
+.doc-head { border-bottom: 1px solid var(--rule); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+h1 { margin: 0 0 .5rem; color: var(--ink); font-size: 2rem; line-height: 1.2; letter-spacing: -.015em; }
+.doc-head .sum { margin: 0 0 1.25rem; font-size: 1.02rem; }
+.meta { display: grid; grid-template-columns: max-content 1fr; gap: .25rem 1.5rem; margin: 0; font-size: .875rem; }
+.meta dt { color: var(--muted); }
+.meta dd { margin: 0; color: var(--ink); }
+
+h2 { margin: 2.75rem 0 .8rem; padding-bottom: .4rem; border-bottom: 1px solid var(--rule); color: var(--ink); font-size: 1.3rem; line-height: 1.3; letter-spacing: -.01em; scroll-margin-top: 1rem; }
+h3 { margin: 1.6rem 0 .4rem; color: var(--ink); font-size: 1rem; }
+.num { color: var(--accent); font-variant-numeric: tabular-nums; margin-right: .6rem; }
+p { margin: .65rem 0; }
+ul { margin: .5rem 0; padding-left: 1.3rem; }
+li { margin: .3rem 0; }
+strong { color: var(--ink); font-weight: 600; }
+
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .9rem; }
+th, td { text-align: left; vertical-align: top; padding: .6rem .75rem; border: 1px solid var(--rule); }
+thead th { background: var(--side); color: var(--ink); font-weight: 600; font-size: .8rem; letter-spacing: .03em; text-transform: uppercase; }
+tbody th { font-weight: 600; color: var(--ink); }
+.wrap-table { overflow-x: auto; }
+.wrap-table table { min-width: 34rem; }
+
+.note { margin: 1.25rem 0; padding: .75rem 1rem; border: 1px solid var(--rule); border-left: 3px solid var(--accent); background: var(--accent-bg); font-size: .925rem; }
+.note p { margin: 0; }
+.note .label { display: block; color: var(--accent); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: .2rem; }
+
+.doc-foot { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<div class="top"><div class="top-in"><img src="../icon.png" alt=""><a href="../">Istiqamah</a><span class="crumb">/ Privacy Policy</span></div></div>
+
+<div class="layout">
+<aside aria-label="Contents">
+  <p>On this page</p>
+  <ol>
+    <li><a href="#summary">1. Summary</a></li>
+    <li><a href="#stored">2. Data stored on the device</a></li>
+    <li><a href="#permissions">3. Permissions</a></li>
+    <li><a href="#services">4. Third-party services</a></li>
+    <li><a href="#security">5. Security</a></li>
+    <li><a href="#rights">6. Your rights</a></li>
+    <li><a href="#children">7. Children</a></li>
+    <li><a href="#changes">8. Changes</a></li>
+    <li><a href="#contact">9. Contact</a></li>
+  </ol>
+</aside>
+
+<main>
+<header class="doc-head">
+  <h1>Privacy Policy</h1>
+  <p class="sum">Istiqamah is a free prayer companion for Muslims in Sri Lanka, made by an independent developer. This policy describes what information the app handles, where it is kept, and who can see it.</p>
+  <dl class="meta">
+    <dt>Effective</dt><dd>18 November 2026</dd>
+    <dt>Applies to</dt><dd>Istiqamah for Android (<code>com.tzur.istiqamah</code>)</dd>
+    <dt>Contact</dt><dd><a href="mailto:vibudathisuraka@gmail.com">vibudathisuraka@gmail.com</a></dd>
+  </dl>
+</header>
+
+<h2 id="summary"><span class="num">1</span>Summary</h2>
+<table>
+  <thead><tr><th scope="col">Topic</th><th scope="col">Practice</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Account or sign-in</th><td>None required or offered.</td></tr>
+    <tr><th scope="row">Ads, analytics, tracking</th><td>None. No advertising, analytics or tracking libraries are included.</td></tr>
+    <tr><th scope="row">Data sent to the developer</th><td>None. The developer operates no server and receives nothing from the app.</td></tr>
+    <tr><th scope="row">Location</th><td>Optional. Processed on the device to select a prayer-time zone; never stored or transmitted.</td></tr>
+    <tr><th scope="row">Network use</th><td>Quran recitation streaming from everyayah.com, only when you start playback.</td></tr>
+    <tr><th scope="row">Sale or sharing of data</th><td>None.</td></tr>
+  </tbody>
+</table>
+
+<h2 id="stored"><span class="num">2</span>Data stored on the device</h2>
+<p>The app keeps the following on your phone, in its private app storage:</p>
+<ul>
+  <li><strong>Prayer log:</strong> prayers you mark as prayed, make-up (qada) prayers and rest days.</li>
+  <li><strong>Favourites:</strong> duas you save.</li>
+  <li><strong>Settings:</strong> zone or district, language, theme and alert preferences.</li>
+</ul>
+<p>This data is not accessible to the developer. It is kept until you delete it.</p>
+<h3>2.1 Deleting your data</h3>
+<p>Open <strong>Settings → Apps → Istiqamah → Storage → Clear storage</strong>, or uninstall the app. Either removes everything listed above.</p>
+<h3>2.2 Backups</h3>
+<p>The app's backup feature creates a file containing the data above and opens Android's share sheet. The file goes only to the destination you choose. If Android's device backup to your Google account is enabled, Android may include the app's data in that backup, under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+
+<h2 id="permissions"><span class="num">3</span>Permissions</h2>
+<p>Each permission is used only for the purpose shown. You can refuse any of them; the app continues to work, with only the related feature limited.</p>
+<div class="wrap-table">
+<table>
+  <thead><tr><th scope="col">Permission</th><th scope="col">Android name</th><th scope="col">Purpose</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Approximate location</th><td><code>ACCESS_COARSE_LOCATION</code></td><td>Find the nearest ACJU prayer-time zone. Requested only when you choose it; a manual district picker is available instead.</td></tr>
+    <tr><th scope="row">Notifications</th><td><code>POST_NOTIFICATIONS</code></td><td>Prayer alerts and the panel showing all five prayer times.</td></tr>
+    <tr><th scope="row">Alarms and reminders</th><td><code>USE_EXACT_ALARM</code>, <code>SCHEDULE_EXACT_ALARM</code></td><td>Deliver prayer alerts at the exact minute.</td></tr>
+    <tr><th scope="row">Full-screen alarm</th><td><code>USE_FULL_SCREEN_INTENT</code></td><td>Show the Fajr wake-up alarm over the lock screen while it rings.</td></tr>
+    <tr><th scope="row">Run at start-up</th><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Reschedule alerts after the phone restarts.</td></tr>
+    <tr><th scope="row">Keep awake</th><td><code>WAKE_LOCK</code></td><td>Finish scheduling alerts without the phone sleeping midway.</td></tr>
+    <tr><th scope="row">Internet</th><td><code>INTERNET</code></td><td>Stream Quran recitation. Prayer times, Quran text, duas and alerts work offline.</td></tr>
+    <tr><th scope="row">Background playback</th><td><code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td><td>Continue recitation with the screen locked or the app in the background.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="services"><span class="num">4</span>Third-party services</h2>
+<h3>4.1 everyayah.com</h3>
+<p>When you play a recitation, the app requests the audio from everyayah.com over HTTPS. As with any web request, everyayah.com receives your IP address and the recitation requested. Audio is streamed and not saved on the device. No other information is sent.</p>
+<h3>4.2 Google Play</h3>
+<p>Google provides installation, updates and crash reporting for all apps under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. The developer may see aggregated, anonymous statistics from Google Play, such as install counts and crash reports, which do not identify you.</p>
+<h3>4.3 Your phone's text-to-speech</h3>
+<p>If you tap Read aloud, the app passes one sentence, the next prayer and its time, to the text-to-speech engine installed on your phone (for example Google's). Nothing else is passed. The engine is part of your phone, not of this app, and follows its own privacy policy.</p>
+<h3>4.4 External links</h3>
+<p>Some items, such as this policy, the Play Store page, credits and the feedback email, open in your browser or email app. The app sends no data with them. Those apps and websites follow their own privacy policies.</p>
+
+<h2 id="security"><span class="num">5</span>Security</h2>
+<p>Data is held in Android's private app storage, which other apps cannot read. The developer keeps no copy on any server. Recitation is streamed over an encrypted HTTPS connection.</p>
+
+<h2 id="rights"><span class="num">6</span>Your rights</h2>
+<p>The developer collects no personal data, so holds nothing about you to access, correct or delete. You control all data the app stores and can delete it at any time (section 2.1).</p>
+<p>For questions or concerns under Sri Lanka's Personal Data Protection Act, No. 9 of 2022, or any other privacy law, contact the developer (section 9).</p>
+
+<h2 id="children"><span class="num">7</span>Children</h2>
+<p>The app is intended for a general audience and is not directed at children under 13. It collects no personal data from any user, including children.</p>
+
+<h2 id="changes"><span class="num">8</span>Changes to this policy</h2>
+<p>If the app changes how it handles information, for example by adding a feature that uses the network, this page will be updated before that version is released and the effective date above will change.</p>
+
+<h2 id="contact"><span class="num">9</span>Contact</h2>
+<p>Privacy questions: <a href="mailto:vibudathisuraka@gmail.com">vibudathisuraka@gmail.com</a></p>
+
+<div class="note"><span class="label">Note</span><p>Prayer times come from ACJU's published timetable. Istiqamah is not affiliated with or endorsed by ACJU.</p></div>
+
+<p class="doc-foot">© 2026 Istiqamah · <a href="../">Home</a></p>
+</main>
+</div>
+</body>
+</html>
